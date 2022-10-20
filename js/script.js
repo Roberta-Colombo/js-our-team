@@ -72,6 +72,7 @@ for(i in team){
     const infoDiv = document.createElement('div');
     container.append(infoDiv);
     const member = team[i];
-    infoDiv.innerHTML = member.name + " " + member.last_name + "<br>ruolo: " + member.role + "<br>" + "<img src="+ member.image+ ">"
+    infoDiv.innerHTML = "<div class='text-style'>" +  
+    member.name + " " + member.last_name + "<br>" + "<em>"+member.role+"</em>" + "</div>" + "<br>" + "<img class='img-properties' src="+ member.image+ ">"
 }
 
