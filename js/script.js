@@ -60,5 +60,13 @@ const team = [
     }
 
 ]
-
 console.log(team);
+
+// stampo dati di ogni membro in console:
+
+for(let i = 0; i < team.length; i++){
+    console.log(team[i]);
+}
+
+
+
