@@ -20,35 +20,35 @@ const team = [
        'name': 'Wayne',
        'last_name': 'Barnett',
        'role': 'Founder &amp; CEO',
-       'image': "./img/wayne-barnett-founder-ceo.jpg"
+       'image': './img/wayne-barnett-founder-ceo.jpg'
     },
 
     {
         'name': 'Angela',
         'last_name': 'Caroll',
         'role': 'Chief Editor',
-        'image': 'carol.jpg'
+        'image': './img/angela-caroll-chief-editor.jpg'
     },
 
     {
         'name': 'Walter',
         'last_name': 'Gordon',
         'role': 'Office Manager',
-        'image': 'walter.jpg'
+        'image': './img/walter-gordon-office-manager.jpg'
     },
 
     {
         'name': 'Angela',
         'last_name': 'Lopez',
         'role': 'Social Media Manager',
-        'image': 'angela.jpg'
+        'image': './img/angela-lopez-social-media-manager.jpg'
     },
 
     {
         'name': 'Scott',
         'last_name': 'Estrada',
         'role': 'Developer',
-        'image': 'scott.jpg'
+        'image': './img/scott-estrada-developer.jpg'
 
     },
 
@@ -56,13 +56,13 @@ const team = [
         'name': 'Barbara',
         'last_name': 'Ramos',
         'role': 'Graphic Designer',
-        'image': 'barbara.jpg'
+        'image': './img/barbara-ramos-graphic-designer.jpg'
     }
 
 ]
 console.log(team);
 
-// stampo dati di ogni membro in console e poi in DOM:
+// stampo dati di ogni membro in console e poi in DOM + aggiungo foto:
 
 const container = document.querySelector('.container');
 
@@ -72,9 +72,6 @@ for(i in team){
     const infoDiv = document.createElement('div');
     container.append(infoDiv);
     const member = team[i];
-    infoDiv.innerHTML = member.name + " " + member.last_name + "<br>ruolo: " + member.role + "<br>" + member.image;
+    infoDiv.innerHTML = member.name + " " + member.last_name + "<br>ruolo: " + member.role + "<br>" + "<img src="+ member.image+ ">"
 }
-
-
-
 
