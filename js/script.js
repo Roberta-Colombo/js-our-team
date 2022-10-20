@@ -77,6 +77,7 @@ for(i in team){
 }
 
 const addBtn = document.getElementById('add-btn');
+const submitBtn = document.getElementById('submit');
 
 function addForm(){
     // const fieldName = document.createElement('input');
@@ -92,8 +93,33 @@ function addForm(){
     const newForm = document.getElementById('new-member-form').classList.remove("d-none").classList.add("show");
 }
 
+function collectData(){
+    const newMemberData = [];
+    const newName = document.getElementById('field-name').value;
+    newMemberData.push(newName);
+    const newLastName = document.getElementById('field-last-name').value;
+    newMemberData.push(newLastName);
+    const newRole = document.getElementById('field-role').value;
+    newMemberData.push(newRole);
+    const newImage = document.getElementById('field-image').value;
+    newMemberData.push(newImage);
+
+    console.log(newMemberData);
+
+   
+    
+   
+}
+
+
+
+
 addBtn.addEventListener('click', addForm);
 
-function addNewMember(){
+submitBtn.addEventListener('click', collectData);
+
+
+
+// function addNewMember(){
     
-}
+// }
