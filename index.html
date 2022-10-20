@@ -18,16 +18,21 @@
 
     <div class="new-member-section">
 
-        <button id="add-btn">Add new member</button>
+        <button id="add-btn" class="my-button">Add new member</button>
 
-        <form id="new-member-form" class="d-none">
-            <input id="field-name" type="text">
-            <input id="field-last-name" type="text">
-            <input id="field-role" type="text">
-            <input id="field-image" type="text">
+        <form id="new-member-form" class="d-none mb-5 d-flex justify-content-center">
+
+            <input id="field-name"  type="text" placeholder="Enter name...">
+            <input id="field-last-name"  type="text"
+            placeholder="Enter last name...">
+            <input id="field-role"
+            placeholder="Enter job role..."
+             type="text">
+            <input id="field-image" type="text"
+            placeholder="Enter image url...">
+
+            <button id="submit" class="my-button">Submit data</button>
         </form>
-
-        <button id="submit">Submit data</button>
 
     </div>
     

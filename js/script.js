@@ -90,11 +90,13 @@ function addForm(){
     // sectionNewMember.append(fieldLastName);
     // sectionNewMember.append(fieldRole);
     // sectionNewMember.append(fieldimage);
-    const newForm = document.getElementById('new-member-form').classList.remove("d-none").classList.add("show");
+    const newForm = document.getElementById('new-member-form').classList.remove("d-none");
+    newForm.classList.add("show");
 }
 
 function collectData(){
     const newMemberData = [];
+
     const newName = document.getElementById('field-name').value;
     newMemberData.push(newName);
     const newLastName = document.getElementById('field-last-name').value;
@@ -104,22 +106,11 @@ function collectData(){
     const newImage = document.getElementById('field-image').value;
     newMemberData.push(newImage);
 
-    console.log(newMemberData);
-
-   
-    
-   
+    console.log(newMemberData);       
 }
-
-
 
 
 addBtn.addEventListener('click', addForm);
 
 submitBtn.addEventListener('click', collectData);
 
-
-
-// function addNewMember(){
-    
-// }

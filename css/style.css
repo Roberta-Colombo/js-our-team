@@ -31,3 +31,21 @@ h2 {
 .show {
     display: block;
 }
+
+#add-btn {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-bottom: 30px;
+}
+
+input {
+    margin-right: 20px;
+}
+
+.my-button {
+    background-color: white;
+    border: 2px solid black;
+    font-weight: bold;
+    
+}
