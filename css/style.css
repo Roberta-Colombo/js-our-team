@@ -27,3 +27,7 @@ h2 {
 .text-style {
     font-size: 1.2rem;
 }
+
+.show {
+    display: block;
+}

@@ -76,3 +76,24 @@ for(i in team){
     member.name + " " + member.last_name + "<br>" + "<em>"+member.role+"</em>" + "</div>" + "<br>" + "<img class='img-properties' src="+ member.image+ ">"
 }
 
+const addBtn = document.getElementById('add-btn');
+
+function addForm(){
+    // const fieldName = document.createElement('input');
+    // const fieldLastName = document.createElement('input');
+    // const fieldRole = document.createElement('input');
+    // const fieldimage = document.createElement('input');
+
+    // const sectionNewMember = document.querySelector('.new-member-section');
+    // sectionNewMember.append(fieldName);
+    // sectionNewMember.append(fieldLastName);
+    // sectionNewMember.append(fieldRole);
+    // sectionNewMember.append(fieldimage);
+    const newForm = document.getElementById('new-member-form').classList.remove("d-none").classList.add("show");
+}
+
+addBtn.addEventListener('click', addForm);
+
+function addNewMember(){
+    
+}
