@@ -62,11 +62,16 @@ const team = [
 ]
 console.log(team);
 
-// stampo dati di ogni membro in console:
+// stampo dati di ogni membro in console e poi in DOM:
+
+const container = document.querySelector('.container');
 
 for(let i = 0; i < team.length; i++){
     console.log(team[i]);
+    const member = team[i];
+
+    const infoDiv = document.createElement('div');
+    container.append(infoDiv);
+    infoDiv.innerHTML = member.name + " " + member.last_name + "<br>ruolo: " + member.role + "<br>" + member.image;
 }
-
-
 
