@@ -20,7 +20,7 @@ const team = [
        'name': 'Wayne',
        'last_name': 'Barnett',
        'role': 'Founder &amp; CEO',
-       'image': 'wayne.jpg'
+       'image': "./img/wayne-barnett-founder-ceo.jpg"
     },
 
     {
@@ -66,12 +66,15 @@ console.log(team);
 
 const container = document.querySelector('.container');
 
-for(let i = 0; i < team.length; i++){
+for(i in team){
     console.log(team[i]);
-    const member = team[i];
 
     const infoDiv = document.createElement('div');
     container.append(infoDiv);
+    const member = team[i];
     infoDiv.innerHTML = member.name + " " + member.last_name + "<br>ruolo: " + member.role + "<br>" + member.image;
 }
+
+
+
 
